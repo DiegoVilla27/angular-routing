@@ -1,8 +1,10 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { UsersComponent } from "./users.component";
 import { CreateComponent } from "./create/create.component";
+import { DeleteComponent } from "./delete/delete.component";
 import { EditComponent } from "./edit/edit.component";
+import { UsersComponent } from "./users.component";
+import { ShowComponent } from "./show/show.component";
 
 const routes: Routes = [
   {
@@ -20,10 +22,24 @@ const routes: Routes = [
         }
       },
       {
-        path: "edit",
+        path: "edit/:id",
         component: EditComponent,
         data: {
           title: "Edit User"
+        }
+      },
+      {
+        path: "delete/:id",
+        component: DeleteComponent,
+        data: {
+          title: "Delete User"
+        }
+      },
+      {
+        path: "show/:id",
+        component: ShowComponent,
+        data: {
+          title: "Show User"
         }
       }
     ]

@@ -1,6 +1,8 @@
 <ul>
   <li [routerLink]="['create']" routerLinkActive="activeSub">Create</li>
-  <li [routerLink]="['edit']" routerLinkActive="activeSub">Edit</li>
+  <li (click)="goToRoute('edit', 1)" routerLinkActive="activeSub">Edit</li>
+  <li (click)="goToRoute('delete', 2)" routerLinkActive="activeSub">Delete</li>
+  <li (click)="goToRoute('show', 3)" routerLinkActive="activeSub">Show</li>
 </ul>
 
 <div class='content'>

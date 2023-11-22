@@ -2,11 +2,11 @@ import { Component } from "@angular/core";
 import { ActivatedRoute, Params } from "@angular/router";
 
 @Component({
-  selector: "app-edit",
-  templateUrl: "./edit.component.html",
-  styleUrl: "./edit.component.scss"
+  selector: "app-delete",
+  templateUrl: "./delete.component.html",
+  styleUrl: "./delete.component.scss"
 })
-export class EditComponent {
+export class DeleteComponent {
   id: string = "";
 
   constructor(private _aRoute: ActivatedRoute) {}
